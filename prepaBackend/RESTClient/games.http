@@ -1,0 +1,19 @@
+@baseUrl = http://localhost:3000
+
+######### NORMAL OPERATION  ###########
+
+### Read all games
+GET http://localhost:3000/games
+
+
+### Create a game
+POST {{baseUrl}}/games
+Content-Type: application/json
+
+{
+    "name":"Overwatch",
+    "link":"https://www.youtube.com/watch?v=qd9Wn6_s0n0"
+}
+
+### Add One Like
+PUT http://localhost:3000/games/1
